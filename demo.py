@@ -77,7 +77,7 @@ else:
     attn_implementation = "sdpa"
 
 # Pick a model we'd like to use
-# Note: The model I'm using required login to Hugging Face CLI to be able to access otherwise a HTTPS error will be thrown
+# Note: The model I'm using required login to Hugging Face CLI to be able to access otherwise an HTTPError or an OSError will be thrown
 # You can also substitute with a model that doesn't require login like: "microsoft/Phi-3-mini-4k-instruct"
 # For more details, read the README.md file
 

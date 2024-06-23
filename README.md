@@ -23,7 +23,7 @@ The workflow resembles the paper: [Retrieval-Augmented Generation for Knowledge-
 Two main options:
 
 1. NVIDIA GPU with 5GB+ VRAM (use `nvidia-smi` on terminal to check).
-2. Google Colab with an NVIDIA GPU or TPU.
+2. Google Colab with a GPU runtime or TPU runtime.
 
 ### Setup
 
@@ -94,10 +94,18 @@ The model I'm choosing is `google/gemma-2b-it` since I'm running this notebook o
 | [Gemma 2B](https://huggingface.co/google/gemma-2b-it) | 4-bit     | 2,106,749,952      | 2009.15         | 1.96            | ~5.0                    | [`gemma-2b`](https://huggingface.co/google/gemma-2b) or [`gemma-2b-it`](https://huggingface.co/google/gemma-2b-it) for instruction tuned version |
 | Gemma 2B                                              | Float16   | 5,079,453,696      | 4844.14         | 4.73            | ~8.0                    | Same as above                                                                                                                                    |
 
+### Demo
+
+To run demo, enter to the terminal:
+
+```
+python demo.py
+```
+
 #### Setup Note:
 
 - If there is any troubles with the setup, please leave an issue.
-- To use more varieties of models on [Hugging Face](https://huggingface.co/), you will need to authorize your local machine via [Hugging Face CLI](https://huggingface.co/docs/huggingface_hub/en/quick-start#authentication), otherwise an HTTPs error will occur.
+- To use more varieties of models on [Hugging Face](https://huggingface.co/), you will need to authorize your local machine via [Hugging Face CLI](https://huggingface.co/docs/huggingface_hub/en/quick-start#authentication), otherwise an HTTPError or an OSError may occur.
 - If you're not comfortable with logging into Hugging Face, you can change the model to [`microsoft/Phi-3`](https://huggingface.co/collections/microsoft/phi-3-6626e15e9585a200d2d761e3) models since I tested on it.
 - If you change the model, consider the output text template in the model page and change the `output-text` int the notebook according to it.
 - If you want to try modified models (models that are either made smaller or made to use for specific purposes: like uncensored the content, or to code solely), consider visiting: [Tom Jobbins](https://huggingface.co/TheBloke)
