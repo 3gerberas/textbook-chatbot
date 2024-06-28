@@ -107,5 +107,5 @@ python demo.py
 - If there is any troubles with the setup, please leave an issue.
 - To use more varieties of models on [Hugging Face](https://huggingface.co/), you will need to authorize your local machine via [Hugging Face CLI](https://huggingface.co/docs/huggingface_hub/en/quick-start#authentication), otherwise an HTTPError or an OSError may occur.
 - If you're not comfortable with logging into Hugging Face, you can change the model to [`microsoft/Phi-3`](https://huggingface.co/collections/microsoft/phi-3-6626e15e9585a200d2d761e3) models since I tested on it.
-- If you change the model, consider the output text template in the model page and change the `output-text` int the notebook according to it.
+- If you change the model, consider the output text template in the model page and change the `output-text` in the notebook according to it.
 - If you want to try modified models (models that are either made smaller or made to use for specific purposes: like uncensored the content, or to code solely), consider visiting: [Tom Jobbins](https://huggingface.co/TheBloke)
