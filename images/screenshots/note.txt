@@ -1,2 +1,0 @@
-- The screenshots taken with a chatbot run model google/gemma-2-it
-- I also put screenshots from the textbook that are correlated to the screenshots.

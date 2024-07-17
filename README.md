@@ -94,14 +94,6 @@ The model I'm choosing is `google/gemma-2b-it` since I'm running this notebook o
 | [Gemma 2B](https://huggingface.co/google/gemma-2b-it) | 4-bit     | 2,106,749,952      | 2009.15         | 1.96            | ~5.0                    | [`gemma-2b`](https://huggingface.co/google/gemma-2b) or [`gemma-2b-it`](https://huggingface.co/google/gemma-2b-it) for instruction tuned version |
 | Gemma 2B                                              | Float16   | 5,079,453,696      | 4844.14         | 4.73            | ~8.0                    | Same as above                                                                                                                                    |
 
-### Demo
-
-To run demo, enter to the terminal:
-
-```
-python demo.py
-```
-
 #### Setup Note:
 
 - If there is any troubles with the setup, please leave an issue.
